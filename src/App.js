@@ -1,6 +1,5 @@
 import Image from './calculator.png';
 import './App.css';
-
 import React, {useState,useRef} from 'react';
 
 function App() {
@@ -31,8 +30,8 @@ function App() {
   };
   const resetResult = (e) => {
     e.preventDefault();
-    setResult((preValue) => preValue * 0);
-  }
+    setResult(0);
+  };
 
 
   return (
@@ -41,7 +40,7 @@ function App() {
         <h1>The Calculator</h1>
         <img src={Image} className='App-logo' alt='calculator' height={150} width={150}/>
       </header>
-
+      <main>
       <form>
           <h2>Result:</h2>
           <h3>{result}</h3>
@@ -58,9 +57,7 @@ function App() {
         <button type="button" onClick={resetInput}>Reset Input</button>
         <button type="button" onClick={resetResult}>Reset Result</button>
       </div>
-
-
-      </form>
+      </form></main>
     </div>
   );
 }
