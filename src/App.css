@@ -7,7 +7,7 @@
   padding: 20px;
 }
 
-/* .App-logo {
+.App-logo {
   pointer-events: none;
   animation: App-logo-heartbeat infinite 1s ease-in-out;
 }
@@ -22,7 +22,7 @@
   25% {
     transform: scale(1.2);
   }
-} */
+}
 
 .input-container {
   display: flex;
